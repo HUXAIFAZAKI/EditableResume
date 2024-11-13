@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  background-color: #d9d9d9;
+}
+h1 {
+  user-select: none;
+  font-size: 3rem;
+  margin: 25px auto;
+}
+#resumeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #0a0d0a;
+}
+
+.image-input {
+  align-self: center;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+.btn-submit {
+  transition: all 0.3s ease-in-out;
+  width: 10%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: #00f500;
+  color: #000000;
+}
+
+.btn-clear {
+  transition: all 0.3s ease-in-out;
+  margin: 25px;
+  width: 10%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-clear:hover {
+  cursor: pointer;
+  background-color: #fe3535;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 75%;
+  }
+  .btn-submit,
+  .btn-clear {
+    width: 35%;
+  }
+}
+@media (max-width: 425px) {
+  .btn-submit,
+  .btn-clear {
+    width: 25%;
+  }
+}

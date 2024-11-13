@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <center><h1 class="header-text">EDITABLE RESUME</h1></center>
+      <div class="btn-container">
+        <button class="btn btn-hobbies">Show/Hide Hobbies</button>
+        <button class="btn btn-languages">Show/Hide Languages</button>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-download">Download</button>
+        <button class="btn btn-share">Share</button>
+      </div>
+    </header>
+    <main id="resume">
+      <section class="right-section">
+        <div class="profile-container">
+          <h1 id="name">Your Name</h1>
+          <h2 id="jobTitle">Software Engineer</h2>
+        </div>
+        <img
+          src="../pfp.png"
+          alt="profile picture"
+          class="profile-picture"
+          id="resumeImage"
+        />
+        <div class="contact-container">
+          <h2>Contact Me</h2>
+          <p id="address">Address: 1234 Main St, Anytown, Pakistan</p>
+          <p id="phone">Phone: 123-456-7890</p>
+          <p id="email">
+            Email:
+            <a href="mailto:example@mail.com">example@mail.com</a>
+          </p>
+        </div>
+        <div class="languages-container" style="display: block">
+          <h2>Languages</h2>
+          <p id="languages">English, Urdu, Punjabi</p>
+        </div>
+      </section>
+      <section class="left-section">
+        <div class="education-container">
+          <h2>Education</h2>
+          <p id="education">Bachelor of Science in Computer Science</p>
+        </div>
+        <div class="experience-container">
+          <h2>Experience</h2>
+          <p id="experience">Software Engineer at XYZ Company</p>
+          <p id="experience-duration">2020 - Present</p>
+          <ul id="resumeProjects">
+            <li>
+              Developed and maintained web applications using React and Node.js
+            </li>
+            <li>
+              Implemented RESTful APIs and databases using Express and MongoDB
+            </li>
+            <li>
+              Collaborated with cross-functional teams to design and implement
+              new features
+            </li>
+          </ul>
+        </div>
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <ul id="resumeSkills">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+          </ul>
+        </div>
+
+        <div class="hobbies-container" style="display: block">
+          <h2>Hobbies</h2>
+          <ul id="resumeHobbies">
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Coding</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <center>
+        <h1 class="footer-text">
+          Created by: <a href="https://github.com/HUXAIFAZAKI">Huxaifa</a>
+        </h1>
+      </center>
+    </footer>
+  </body>
+</html>
