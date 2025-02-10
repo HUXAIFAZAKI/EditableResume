@@ -5,54 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDITABLE RESUME</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <center><h1 class="header-text">EDITABLE RESUME</h1></center>
-      <div class="btn-container">
-        <button class="btn btn-hobbies">Show/Hide Hobbies</button>
-        <button class="btn btn-languages">Show/Hide Languages</button>
-        <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-download">Download</button>
-        <button class="btn btn-share">Share</button>
+      <div class="header-content">
+        <h1 class="header-text">EDITABLE RESUME</h1>
+        <div class="btn-container">
+          <button class="btn btn-hobbies">
+            <i class="fas fa-heart"></i> Show/Hide Hobbies
+          </button>
+          <button class="btn btn-languages">
+            <i class="fas fa-language"></i> Show/Hide Languages
+          </button>
+          <button class="btn btn-edit"><i class="fas fa-edit"></i> Edit</button>
+          <button class="btn btn-download">
+            <i class="fas fa-download"></i> Download
+          </button>
+          <button class="btn btn-share">
+            <i class="fas fa-share-alt"></i> Share
+          </button>
+        </div>
       </div>
     </header>
     <main id="resume">
       <section class="right-section">
-        <div class="profile-container">
+        <div class="profile-container card">
           <h1 id="name">Your Name</h1>
           <h2 id="jobTitle">Software Engineer</h2>
+          <img alt="profile picture" class="profile-picture" id="resumeImage" />
         </div>
-        <img
-          src="../pfp.png"
-          alt="profile picture"
-          class="profile-picture"
-          id="resumeImage"
-        />
-        <div class="contact-container">
-          <h2>Contact Me</h2>
-          <p id="address">Address: 1234 Main St, Anytown, Pakistan</p>
-          <p id="phone">Phone: 123-456-7890</p>
+        <div class="contact-container card">
+          <h2><i class="fas fa-address-card"></i> Contact Me</h2>
+          <p id="address">
+            <i class="fas fa-map-marker-alt"></i> 1234 Main St, Anytown,
+            Pakistan
+          </p>
+          <p id="phone"><i class="fas fa-phone"></i> 123-456-7890</p>
           <p id="email">
-            Email:
+            <i class="fas fa-envelope"></i>
             <a href="mailto:example@mail.com">example@mail.com</a>
           </p>
         </div>
-        <div class="languages-container" style="display: block">
-          <h2>Languages</h2>
+        <div class="languages-container card" style="display: block">
+          <h2><i class="fas fa-language"></i> Languages</h2>
           <p id="languages">English, Urdu, Punjabi</p>
         </div>
       </section>
       <section class="left-section">
-        <div class="education-container">
-          <h2>Education</h2>
+        <div class="education-container card">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2>
           <p id="education">Bachelor of Science in Computer Science</p>
+          <p class="subtext">University of XYZ, 2016 - 2020</p>
         </div>
-        <div class="experience-container">
-          <h2>Experience</h2>
+        <div class="experience-container card">
+          <h2><i class="fas fa-briefcase"></i> Experience</h2>
           <p id="experience">Software Engineer at XYZ Company</p>
-          <p id="experience-duration">2020 - Present</p>
+          <p class="subtext" id="experience-duration">2020 - Present</p>
           <ul id="resumeProjects">
             <li>
               Developed and maintained web applications using React and Node.js
@@ -66,18 +80,29 @@
             </li>
           </ul>
         </div>
-        <div class="skills-container">
-          <h2>Skills</h2>
-          <ul id="resumeSkills">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
+        <div class="skills-container card">
+          <h2><i class="fas fa-tools"></i> Skills</h2>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">React</div>
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">Node.js</div>
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-name">Express</div>
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
         </div>
-
-        <div class="hobbies-container" style="display: block">
-          <h2>Hobbies</h2>
+        <div class="hobbies-container card" style="display: block">
+          <h2><i class="fas fa-heart"></i> Hobbies</h2>
           <ul id="resumeHobbies">
             <li>Reading</li>
             <li>Traveling</li>
@@ -87,11 +112,21 @@
       </section>
     </main>
     <footer>
-      <center>
+      <div class="footer-content">
         <h1 class="footer-text">
           Created by: <a href="https://github.com/HUXAIFAZAKI">Huxaifa</a>
         </h1>
-      </center>
+        <div class="social-icons">
+          <a href="https://github.com/HUXAIFAZAKI"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/huxaifa1337/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </html>
