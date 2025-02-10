@@ -65,7 +65,6 @@ downloadButton.addEventListener("click", function () {
   footer.style.display = "none";
   resume.style.height = "80%";
 
-  // Generate PDF
   html2pdf()
     .from(resume)
     .set({
